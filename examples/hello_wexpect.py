@@ -16,12 +16,16 @@ print(child.before, end='')
 print(child.after, end='')
 
 # run dir command to list directory contents
-child.sendline('dir')
+child.sendline('@dir')
 
 # Waiting for prompt
 child.expect('>')
 
 # Prints content of the directory
+print(child.before, end='')
+print(child.after, end='')
+
+child.expect('>')
 print(child.before, end='')
 print(child.after, end='')
 
